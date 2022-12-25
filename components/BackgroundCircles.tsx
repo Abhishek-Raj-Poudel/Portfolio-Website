@@ -14,11 +14,11 @@ export default function BackgroundCircles({}: Props) {
       transition={{}}
       className="relative flex justify-center items-center "
     >
-      <div className="absolute border border-[#333333] rounded-full h-[200px] w-[200px] mt-52 animate-ping " />
-      <div className="absolute border border-[#444444] opacity-50 rounded-full h-[300px] w-[300px] mt-52 animate-pulse" />
-      <div className="absolute border border-[#333333] rounded-full h-[500px] w-[500px] mt-52 " />
-      <div className="absolute border border-[#F8C77E] opacity-20 rounded-full  h-[650px] w-[650px] mt-52 animate-pulse " />
-      <div className="absolute border border-[#333333] opacity-50 rounded-full h-[800px] w-[800px] mt-52 animate-pulse " />
+      <div className="absolute border border-[#2E3135] opacity-50 rounded-full h-[300px] w-[250px] mt-52 animate-pulse " />
+      <div className="absolute border border-[#7F4D3E] rounded-full opacity-60 h-[500px] w-[400px] mt-52 " />
+      <div className="absolute border border-[#F8C77E] opacity-10 rounded-full  h-[650px] w-[550px] mt-52 animate-pulse " />
+      <div className="absolute border border-[#B87C4C] opacity-30 rounded-full h-[800px] w-[700px] mt-52 animate-pulse " />
+      <div className="absolute border border-[#412728] opacity-10 rounded-full h-[1000px] w-[900px] mt-52 animate-pulse " />
     </motion.div>
   );
 }

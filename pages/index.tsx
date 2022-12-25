@@ -1,4 +1,5 @@
 import Head from "next/head";
+import About from "../components/About";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 
@@ -16,11 +17,14 @@ export default function Home() {
       {/* section is seo friendly */}
       {/* this is also allow use to have snap scroll effect. */}
       {/* snap center makes you snap to content when you scroll and on the center of your screen. */}
-      <section id="hero" className="snap-center">
+      <section id="hero" className="snap-start">
         <Hero />
       </section>
 
       {/* About */}
+      <section id="about" className="snap-center">
+        <About />
+      </section>
 
       {/* Experience */}
 

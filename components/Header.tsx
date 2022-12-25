@@ -18,7 +18,7 @@ export default function Header({}: Props) {
           bgColor="transparent"
         />
         <SocialIcon
-          url="https://www.linkedin.com/in/abhishek-poudel-56bb74187/"
+          url="https://github.com/Abhishek-Raj-Poudel"
           fgColor="gray"
           bgColor="transparent"
         />

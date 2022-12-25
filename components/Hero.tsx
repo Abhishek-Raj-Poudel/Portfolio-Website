@@ -10,34 +10,29 @@ type Props = {};
 export default function Hero({}: Props) {
   // You could try teaching this.
   const [text, count] = useTypewriter({
-    words: [
-      "नमस्ते",
-      "Abhishek Raj Poudel",
-      "<Nodejs React={Developer}/>",
-      "Loves to Code",
-    ],
+    words: ["नमस्ते", "Abhishek Raj Poudel", "Loves to Code"],
     loop: true,
     delaySpeed: 2000,
   });
   return (
-    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
+    <div className="h-screen flex flex-col  items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
       {/* Use Image component form nextjs */}
       <Image
-        className="relative rounded-full h-32 w-32 mx-auto object-cover  "
+        className="rounded-full h-56 w-40 mx-auto object-cover mb-[32px] "
         alt="Profile Image"
         src={profile}
       />
       <div className="z-20">
-        <h2 className="text-sm uppercase text-gray-500 mt-0 pb-2 tracking-[10px]">
+        <h2 className="text-sm uppercase text-gray-500  pb-2 tracking-[10px]">
           Web Developer
         </h2>
-        <h1 className="text-5xl lg:text-6xl font-semibold scroll-px-10">
+        <h1 className="text-5xl pt-4 lg:text-6xl font-semibold scroll-px-10">
           <span>{text}</span>
           <Cursor cursorColor="#F7AB0A" />
         </h1>
 
-        <div className="pt-5">
+        <div className=" flex justify-center gap-2 pt-5">
           {/* this #about #experienge etc will help us directly scroll to that place of our page. */}
           <Link href="#about">
             <button className="heroButton">About</button>
