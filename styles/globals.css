@@ -6,4 +6,10 @@
   .heroButton {
     @apply px-5 lg:px-6 py-2 border border-[#242424] rounded-full uppercase text-xs tracking-[3px] text-gray-400 hover:border-[#F8C77E] hover:text-[#f7ab0a] cursor-pointer transition-all bg-[#111111];
   }
+  .section {
+    @apply flex flex-col h-screen relative text-center md:text-left min-h-screen  mx-auto items-center;
+  }
+  .sectionTitle {
+    @apply absolute top-24 uppercase tracking-[18px] text-gray-500 text-2xl;
+  }
 }

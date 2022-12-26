@@ -1,7 +1,10 @@
 import Head from "next/head";
 import About from "../components/About";
+import Contact from "../components/Contact";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import Projects from "../components/Projects";
+import Skills from "../components/Skills";
 import WorkExperience from "../components/WorkExperience";
 
 export default function Home() {
@@ -14,7 +17,6 @@ export default function Home() {
 
       <Header />
 
-      {/* Hero */}
       {/* section is seo friendly */}
       {/* this is also allow use to have snap scroll effect. */}
       {/* snap center makes you snap to content when you scroll and on the center of your screen. */}
@@ -22,21 +24,27 @@ export default function Home() {
         <Hero />
       </section>
 
-      {/* About */}
       <section id="about" className="snap-center">
         <About />
       </section>
 
-      {/* Experience */}
       <section id="experience" className="snap-center">
         <WorkExperience />
       </section>
 
       {/* Skills */}
+      <section id="skills" className="snap-start">
+        <Skills />
+      </section>
 
       {/* Projects */}
-
+      <section id="projects" className="snap-center">
+        <Projects />
+      </section>
       {/* Contact Me */}
+      <section id="contact" className="snap-center">
+        <Contact />
+      </section>
     </div>
   );
 }
