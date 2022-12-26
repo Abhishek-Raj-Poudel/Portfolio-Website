@@ -8,7 +8,7 @@ type Props = {};
 export default function ExperienceCard({}: Props) {
   return (
     // overflow-hidden
-    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#161616] p-10 opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200 ">
+    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#323232] p-10 opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200 ">
       <motion.div
         initial={{ y: -100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
