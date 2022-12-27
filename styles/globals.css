@@ -12,4 +12,7 @@
   .sectionTitle {
     @apply absolute top-24 uppercase tracking-[18px] text-gray-500 text-2xl;
   }
+  .contactInput {
+    @apply outline-none bg-[#272727] rounded-sm border-b px-6 py-4 border-[#333333] text-[#aaaaaa] placeholder:text-[#555555] transition-all focus:border-[#f8c77e] focus:text-[#f8c77e] hover:border-[#f8c77e]/50;
+  }
 }
