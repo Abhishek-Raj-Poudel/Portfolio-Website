@@ -14,9 +14,9 @@ export default function Projects({}: Props) {
       className="section text-left max-w-full justify-evenly z-0"
     >
       <h3 className="sectionTitle">Projects</h3>
-      <div className="relative w-full flex overflow-x-scroll ovwerflow-y-hidden snap-x snap-mandatory z-20 ">
+      <div className="relative w-full flex overflow-x-scroll ovwerflow-y-hidden snap-x snap-mandatory z-20 customScrollbar ">
         {projects.map((project, i) => (
-          <div className="w-screen flex-shrink-0 snap-center flex flex-col spac-y-5 items-center justify-center p-20 md:p-44 ovwerflow-y-hidden">
+          <div className="w-screen flex-shrink-0 snap-center flex flex-col spac-y-5 items-center justify-center p-20 md:p-44 ">
             <motion.div
               initial={{ y: -200, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}

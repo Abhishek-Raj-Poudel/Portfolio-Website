@@ -15,4 +15,7 @@
   .contactInput {
     @apply outline-none bg-[#272727] rounded-sm border-b px-6 py-4 border-[#333333] text-[#aaaaaa] placeholder:text-[#555555] transition-all focus:border-[#f8c77e] focus:text-[#f8c77e] hover:border-[#f8c77e]/50;
   }
+  .customScrollbar {
+    @apply scrollbar scrollbar-track-[#292929] scrollbar-thumb-[#F8C77E];
+  }
 }

@@ -10,7 +10,7 @@ import WorkExperience from "../components/WorkExperience";
 export default function Home() {
   return (
     // this snaps on the y axis, its manditory and scroll is set to on with overflow-scroll
-    <div className="scroll-smooth bg-[#212121] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0">
+    <div className="scroll-smooth bg-[#212121] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 customScrollbar">
       <Head>
         <title>Abhishek Raj Poudel</title>
       </Head>
