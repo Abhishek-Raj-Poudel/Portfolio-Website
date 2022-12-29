@@ -29,7 +29,7 @@ export default function Hero({}: Props) {
         </h2>
         <h1 className="text-5xl pt-4 lg:text-6xl font-semibold scroll-px-10">
           <span>{text}</span>
-          <Cursor cursorColor="#F7AB0A" />
+          <Cursor cursorColor="#F8C77E" />
         </h1>
 
         <div className=" flex justify-center gap-2 pt-5">

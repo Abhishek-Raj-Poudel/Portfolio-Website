@@ -4,7 +4,7 @@
 
 @layer components {
   .heroButton {
-    @apply px-5 lg:px-6 py-2 border border-[#242424] rounded-full uppercase text-xs tracking-[3px] text-gray-400 hover:border-[#F8C77E] hover:text-[#f7ab0a] cursor-pointer transition-all bg-[#111111];
+    @apply px-5 lg:px-6 py-2 border border-[#333333] rounded-full uppercase text-xs tracking-[3px] text-gray-400 hover:border-primary hover:text-primary cursor-pointer transition-all bg-[#212121];
   }
   .section {
     @apply flex flex-col h-screen relative text-center md:text-left min-h-screen  mx-auto items-center overflow-hidden;
@@ -13,9 +13,9 @@
     @apply absolute top-24 uppercase tracking-[18px] text-gray-500 text-2xl;
   }
   .contactInput {
-    @apply outline-none bg-[#272727] rounded-sm border-b px-6 py-4 border-[#333333] text-[#aaaaaa] placeholder:text-[#555555] transition-all focus:border-[#f8c77e] focus:text-[#f8c77e] hover:border-[#f8c77e]/50;
+    @apply outline-none bg-[#272727] rounded-sm border-b px-6 py-4 border-[#333333] text-[#aaaaaa] placeholder:text-[#555555] transition-all focus:border-primary focus:text-primary hover:border-primary/50;
   }
   .customScrollbar {
-    @apply scrollbar scrollbar-track-[#292929] scrollbar-thumb-[#F8C77E];
+    @apply scrollbar scrollbar-track-[#292929] scrollbar-thumb-primary;
   }
 }
