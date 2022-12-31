@@ -2,10 +2,14 @@ import Image from "next/image";
 import React from "react";
 import profile from "./Images/profile.png";
 import { motion } from "framer-motion";
+import { PageInfo } from "../typings";
+import { urlFor } from "../sanity";
 
-type Props = {};
+type Props = {
+  pageInfo: PageInfo;
+};
 
-function About({}: Props) {
+function About({ pageInfo }: Props) {
   return (
     <div className="section md:flex-row max-w-7xl px-10 justify-evenly  ">
       <h3 className="sectionTitle">About</h3>
@@ -18,9 +22,9 @@ function About({}: Props) {
         transition={{ duration: 1 }}
         className="-mb-20"
       >
-        <Image
+        <img
           className="flex-shrink-0 w-56 h-60 rounded-lg object-cover md:w-64 md:h-96 xl:w-[500px] xl:h-[600px]"
-          src={profile}
+          src={urlFor(pageInfo?.profilePic).url()}
           alt="About Me Image"
         />
       </motion.div>
@@ -29,11 +33,7 @@ function About({}: Props) {
           A Bit About{" "}
           <span className="underline decoration-[#F8C77E]">Myself</span>
         </h4>
-        <p className="text-base">
-          Hello this is Abhishek Raj Poudel.I have been working with Reactjs and
-          nextjs for over a year and am always striving for improvements. Here
-          are some of my skills
-        </p>
+        <p className="text-base">{pageInfo.backgroundInformation}</p>
       </div>
     </div>
   );

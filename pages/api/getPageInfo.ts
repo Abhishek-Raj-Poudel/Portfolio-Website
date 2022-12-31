@@ -2,9 +2,9 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import { groq } from "next-sanity";
 import { sanityClient } from "../../sanity";
 import { PageInfo } from "../../typings";
-
+// Because thereis only one value we need to do it like this.
 const query = groq`
-*[_type=="experience"][0]
+*[_type=="pageInfo"][0]
 `;
 
 type Data = {
