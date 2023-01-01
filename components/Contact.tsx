@@ -8,8 +8,8 @@ type Inputs = {
   subject: string;
   message: string;
 };
-type Props = {};
-export default function Contact({}: Props) {
+
+export default function Contact() {
   const { register, handleSubmit } = useForm<Inputs>();
   // on submit will take you to your email and have all the value you submitted in teh contact me section.
   const onSubmit: SubmitHandler<Inputs> = (formData) => {
@@ -20,8 +20,8 @@ export default function Contact({}: Props) {
       <h3 className="sectionTitle">Contact</h3>
       <div className="flex flex-col space-y-10">
         <h4 className="text-4xl font-semibold text-center">
-          <span className="underline decoration-[#F8C77E]">Let's talk</span> and
-          see how I can help you
+          <span className="underline decoration-[#F8C77E]">{`Let's talk`}</span>{" "}
+          and see how I can help you
         </h4>
         <div className="space-y-10">
           <div className="flex item-center space-x-5 justify-center">
